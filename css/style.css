@@ -1,0 +1,422 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+/* Header moderno */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a13d8f; /* Verde brillante */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+/* Sección Banner Carousel */
+.banner-carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* Footer moderno */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 2rem 1rem 2rem;
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.socials li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.socials li a:hover {
+    color: #4CAF50;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #4CAF50;
+}
+
+section#about {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background-color: #e8f5e9; /* Fondo verde claro */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+section#about h2 {
+    margin-top: 0;
+    color: #4CAF50; /* Color verde del texto del título para que coincida con el header */
+}
+
+/* Sección Proyectos restaurada */
+section#projects {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background-color: #e3f2fd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section#projects h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+/* Contenedor del Video de YouTube */
+section#video {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background-color: #e3f2fd; /* Fondo azul claro */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px;
+}
+.video-container {
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño máximo según tus necesidades */
+    margin: auto;
+    padding: 1rem;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 450px; /* Ajusta la altura según tus necesidades */
+    border: 0; /* Elimina el borde del iframe */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+/* Sección Visor de PDF */
+section#pdf-viewer {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background-color: #e3f2fd; /* Fondo azul claro */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px;
+}
+
+section#pdf-viewer h2 {
+    color: #4CAF50; /* Color verde del título */
+}
+
+.pdf-container {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Contenedor del Reproductor de Spotify */
+section#spotify{
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background-color: #e3f2fd; /* Fondo azul claro */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px;
+}
+
+.spotify-player {
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño máximo según tus necesidades */
+    margin: auto;
+    padding: 1rem;
+}
+
+.spotify-player iframe {
+    width: 100%;
+    height: 380px; /* Ajusta la altura según tus necesidades */
+    border: 0; /* Elimina el borde del iframe */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+/* Sección Galería restaurada */
+section#gallery {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background-color: #f3e5f5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Contacto restaurada */
+section#contact {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background-color: #fff3e0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section#contact h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    /* Mostrar menú hamburguesa */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: #4CAF50;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .hamburger.toggle span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -8px);
+    }
+
+    /* Ajustes para el footer */
+    .footer-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .socials li a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .socials li a {
+        font-size: 1rem;
+    }
+}
+
+/* General */
+a {
+    text-decoration: none; /* Elimina el subrayado por defecto en los enlaces */
+    transition: color 0.3s, transform 0.3s; /* Transiciones suaves para color y transformación */
+}
+
+/* Títulos */
+h1, h2 {
+    transition: color 0.3s, transform 0.3s; /* Transiciones suaves para color y transformación */
+}
+
+h1:hover, h2:hover {
+    color: #FF5722; /* Cambia el color cuando el cursor está sobre el texto (puedes elegir cualquier color que desees) */
+    transform: scale(1.1); /* Aumenta el tamaño del texto */
+}
+
+/* Enlaces de navegación */
+.nav-links li a:hover {
+    color: #FF5722; /* Cambia el color del enlace al pasar el cursor sobre él */
+    transform: scale(1.1); /* Aumenta el tamaño del enlace */
+}
+
+/* Sección About */
+section#about h2:hover {
+    color: #FF5722; /* Cambia el color del título al pasar el cursor sobre él */
+    transform: scale(1.1); /* Aumenta el tamaño del título */
+}
+
+/* Sección Projects */
+section#projects h2:hover {
+    color: #FF5722; /* Cambia el color del título al pasar el cursor sobre él */
+    transform: scale(1.1); /* Aumenta el tamaño del título */
+}
+
+/* Sección Gallery */
+section#gallery h2:hover {
+    color: #FF5722; /* Cambia el color del título al pasar el cursor sobre él */
+    transform: scale(1.1); /* Aumenta el tamaño del título */
+}
+
+/* Sección PDF Viewer */
+section#pdf-viewer h2:hover {
+    color: #FF5722; /* Cambia el color del título al pasar el cursor sobre él */
+    transform: scale(1.1); /* Aumenta el tamaño del título */
+}
+
+/* Sección Contact */
+section#contact h2:hover {
+    color: #FF5722; /* Cambia el color del título al pasar el cursor sobre él */
+    transform: scale(1.1); /* Aumenta el tamaño del título */
+}
+
+/* Footer */
+footer h3:hover {
+    color: #FF5722; /* Cambia el color del título al pasar el cursor sobre él */
+    transform: scale(1.1); /* Aumenta el tamaño del título */
+}
+
+/* Emojis en títulos y enlaces */
+h1, h2, a {
+    display: inline-flex;
+    align-items: center;
+}
